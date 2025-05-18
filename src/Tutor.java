@@ -7,20 +7,31 @@ import java.util.ArrayList;
 
 public class Tutor extends Pessoa
 {
+    /*Atributos*/
     private String endereco;
     private ArrayList<Animal> animais;
 
+    /*Construtor*/
     public Tutor(String nome, String cpf, String email, String telefone, String endereco){
         super(nome, cpf, email, telefone);
         this.endereco = endereco;
         animais = new ArrayList<Animal>();
     }
 
-    String getEndereco(){
+    public String getEndereco(){
         return this.endereco;
     }
 
-    void setEndereco(String end){
+    public void setEndereco(String end){
         this.endereco = end;
     }
+
+    public void adicionarAnimal(Animal animal) {
+        animais.add(animal);
+    }
+
+    public ArrayList<Animal> getAnimais() {
+        return animais;
+    }
+
 }
