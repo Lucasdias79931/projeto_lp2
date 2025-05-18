@@ -1,12 +1,16 @@
+import java.time.LocalDate;
+
 public class Animal
 {
+    /*Atributos*/
     //Todo animal atendido na clínica deve
     //ser cadastrado como nome, raça, data de nascimento e tutor
     private String nome, raca;
-    private String dataNascimento; //coloquei em string
+    private LocalDate dataNascimento; //coloquei em string
     private Tutor tutor;
 
-    public Animal(String nome, String raca, String dataNascimento, Tutor tutor)
+    /*Construtor*/
+    public Animal(String nome, String raca, LocalDate dataNascimento, Tutor tutor)
     {
         this.nome = nome;
         this.raca = raca;
@@ -15,36 +19,35 @@ public class Animal
 
     }
 
-    Tutor getTutor(){
+    public Tutor getTutor(){
         return this.tutor;
     }
 
-    void setTutor(Tutor dono){
+    public void setTutor(Tutor dono){
         this.tutor = dono;
     }
 
-    String getNome(){
+    public String getNome(){
         return this.nome;
     }
 
-    String getRaca(){
-        return this.raca;
-    }
-
-    String getDataNascimento(){
-        return this.dataNascimento;
-    }
-
-
     void setNome(String name){
         this.nome = name;
+    }
+
+    public String getRaca(){
+        return this.raca;
     }
 
     void setRaca(String animal){
         this.raca = animal;
     }
 
-    void setDataNascimento(String data){
+    public LocalDate getDataNascimento(){
+        return this.dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate data){
         this.dataNascimento = data;
     }
 }
