@@ -13,14 +13,30 @@ public class Atendimento {
         this.preco = preco;
     }
 
-    public LocalDate getDataHora() { return dataHora; }
-    public Animal getAnimal() { return animal; }
-    public String getTipoAtendimento() { return tipoAtendimento; }
-    public double getPreco() { return preco; }
+    public LocalDate getDataHora() {
+        return dataHora;
+    }
+    public Animal getAnimal() {
+        return animal;
+    }
+    public String getTipoAtendimento() {
+        return tipoAtendimento;
+    }
+    public double getPreco() {
+        return preco;
+    }
 
-    public void setDataHora(LocalDate dataHora) { this.dataHora = dataHora; }
-    public void setAnimal(Animal animal) { this.animal = animal; }
-    public void setTipoAtendimento(String tipoAtendimento) { this.tipoAtendimento = tipoAtendimento; }
-    public void setPreco(double preco) { this.preco = preco; }
+    public void setDataHora(LocalDate dataHora) {
+        this.dataHora = dataHora;
+    }
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
+    }
+    public void setTipoAtendimento(String tipoAtendimento) {
+        this.tipoAtendimento = tipoAtendimento;
+    }
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
 }
 

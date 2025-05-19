@@ -20,12 +20,23 @@ public class RegistroVacina {
         return vacinas;
     }
 
+    public void setVacinas(ArrayList<Vacina> vacinas) {
+        this.vacinas = vacinas;
+    }
+
     public LocalDate getDataAplicacao() {
         return dataAplicacao;
+    }
+
+    public void setDataAplicacao(LocalDate dataAplicacao) {
+        this.dataAplicacao = dataAplicacao;
     }
 
     public LocalDate getValidade() {
         return validade;
     }
-}
 
+    public void setValidade(LocalDate validade) {
+        this.validade = validade;
+    }
+}
