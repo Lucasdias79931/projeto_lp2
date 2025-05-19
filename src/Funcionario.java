@@ -1,23 +1,23 @@
-//ideia
-public enum turnoTrabalho {
-    MANHA, TARDE, NOITE
-}
 public class Funcionario extends Pessoa
 {
-    private turnoTrabalho turnoTrabalho;
+    private TurnoTrabalho turnoTrabalho;
+    private String funcao;
 
-    public Funcionario(String nome, String cpf, String email, String telefone)
-    {
+    public Funcionario(String funcao, String nome, String cpf, String email, String telefone, TurnoTrabalho turno){
         super(nome, cpf, email, telefone);
         this.turnoTrabalho = turno;
+        this.funcao = funcao;
     }
 
-    public turnoTrabalho getTurnoTrabalho() {
+    public TurnoTrabalho getTurnoTrabalho(){
         return turnoTrabalho;
     }
 
-    public void setTurnoTrabalho(turnoTrabalho turnoTrabalho) {
-        this.turnoTrabalho = turnoTrabalho;
+    public void setFuncao(String funcao){
+        this.funcao = funcao;
     }
 
+    public String getFuncao(){
+        return funcao;
+    }
 }

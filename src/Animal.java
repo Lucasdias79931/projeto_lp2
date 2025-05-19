@@ -2,14 +2,12 @@ import java.time.LocalDate;
 
 public class Animal
 {
-    /*Atributos*/
-    //Todo animal atendido na clínica deve
-    //ser cadastrado como nome, raça, data de nascimento e tutor
+
     private String nome, raca;
-    private LocalDate dataNascimento; //coloquei em string
+    private LocalDate dataNascimento;
     private Tutor tutor;
 
-    /*Construtor*/
+
     public Animal(String nome, String raca, LocalDate dataNascimento, Tutor tutor)
     {
         this.nome = nome;
@@ -31,7 +29,7 @@ public class Animal
         return this.nome;
     }
 
-    void setNome(String name){
+    public void setNome(String name){
         this.nome = name;
     }
 
@@ -39,7 +37,7 @@ public class Animal
         return this.raca;
     }
 
-    void setRaca(String animal){
+    public void setRaca(String animal){
         this.raca = animal;
     }
 

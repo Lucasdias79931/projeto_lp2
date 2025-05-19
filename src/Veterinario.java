@@ -1,6 +1,3 @@
-//veterinários que devem ser cadastrados
-// indicando nome, cpf, email, telefone, especialidade 
-// e o número do CFMV (conselho federal de medicina veterinária 
 
 public class Veterinario extends Pessoa
 {

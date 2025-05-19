@@ -1,7 +1,7 @@
 public class Pessoa
 {
 
-    protected String nome, cpf, email,telefone;
+    private String nome, cpf, email,telefone;
 
     public Pessoa(String nome, String cpf, String email, String telefone)
     {
